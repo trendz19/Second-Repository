@@ -35,13 +35,13 @@
             <p class="slds-text-heading_medium">{title}</p>
           </lightning-layout-item>
           <template if:true={hasDetails}>
-            <lightning-layout-item size="12" class="slds-m-top_medium">
+            <lightning-layout-item size="12" class="slds-var-m-top_medium">
               <lightning-formatted-rich-text
                 value={summary}
               ></lightning-formatted-rich-text>
             </lightning-layout-item>
-            <lightning-layout-item size="12" class="slds-m-top_medium">
-              <span class="slds-p-right_medium" style="font-weight: bold"
+            <lightning-layout-item size="12" class="slds-var-m-top_medium">
+              <span class="slds-var-p-right_medium" style="font-weight: bold"
                 >Price Per Serving: </span
               ><lightning-formatted-number
                 format-style="currency"
@@ -50,7 +50,7 @@
               ></lightning-formatted-number>
             </lightning-layout-item>
             <lightning-layout-item size="12">
-              <span class="slds-p-right_medium" style="font-weight: bold"
+              <span class="slds-var-p-right_medium" style="font-weight: bold"
                 >Ready In: </span
               ><lightning-formatted-number
                 value={time}
@@ -58,14 +58,14 @@
               &nbsp;Minutes
             </lightning-layout-item>
             <lightning-layout-item size="12">
-              <span class="slds-p-right_medium" style="font-weight: bold"
+              <span class="slds-var-p-right_medium" style="font-weight: bold"
                 >Dish Types: </span
               ><lightning-formatted-text
                 value={dishTypes}
               ></lightning-formatted-text>
             </lightning-layout-item>
             <lightning-layout-item size="12">
-              <span class="slds-p-right_medium" style="font-weight: bold"
+              <span class="slds-var-p-right_medium" style="font-weight: bold"
                 >Diets: </span
               ><lightning-formatted-text
                 value={diets}
@@ -77,7 +77,7 @@
               label="Get Full Receipe"
               variant="brand"
               onclick={fetchRecipe}
-              class="slds-m-top_large"
+              class="slds-var-m-top_large"
             ></lightning-button>
           </template>
         </lightning-layout>
