@@ -1,3 +1,4 @@
 {
-  "target-org": "scratch1"
+  "target-org": "scratchOrg1",
+  "target-dev-hub": "devHubOrg1"
 }
